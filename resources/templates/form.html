@@ -1,66 +1,66 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>Submit form</title>
-        <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <style type="text/css">
-            span.error {
-                color: red;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>User form</h1>
-        <form class="form1" action="#" th:action="@{/form}" th:object="${form}" method="post">
-            <table>
-                <tr>
-                    <td>Last name:</td><td><input type="text" th:field="*{lastName}" /></td>
-                </tr>
-                <tr>
-                    <td>Name:</td><td><input type="text" th:field="*{name}" /></td>
-                </tr>
-                <tr>
-                    <td>Middle name:</td><td><input type="text" th:field="*{middleName}" /></td>
-                </tr>
-                <tr>
-                    <td>Age:</td><td><input type="text" th:field="*{age}" /><span class="error" th:errors="*{age}"/></td>
-                </tr>
-                <tr>
-                    <td>Salary:</td><td><input type="text" th:field="*{salary}" /><span class="error" th:errors="*{salary}"/></td>
-                </tr>
-                <tr>
-                    <td>Email:</td><td><input type="text" th:field="*{email}" /><span class="error" th:errors="*{email}"/></td>
-                </tr>
-                <tr>
-                    <td>Work address:</td><td><input type="text" th:field="*{workAddress}" /></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Submit" /></td><td><input type="reset" value="Reset" /></td>
-                </tr>
-                <tr>
-                    <td><a href="/uploadFile">Upload file</a></td>
-                </tr>
-                <tr>
-                    <td><a href="/search">Search users</a></td>
-                </tr>
-                <tr>
-                    <td><a href="/sendEmail">Send email</a></td>
-                </tr>
-                <tr>
-                    <td><a href="/uploadFile">Upload file</a></td>
-                </tr>
+<head>
+    <title>Submit form</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+        span.error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>User form</h1>
+<form class="form1" action="#" th:action="@{/form}" th:object="${form}" method="post">
+    <table>
+        <tr>
+            <td>Last name:</td>
+            <td><input type="text" th:field="*{lastName}"/></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" th:field="*{name}"/></td>
+        </tr>
+        <tr>
+            <td>Middle name:</td>
+            <td><input type="text" th:field="*{middleName}"/></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="text" th:field="*{age}"/><span class="error" th:errors="*{age}"/></td>
+        </tr>
+        <tr>
+            <td>Salary:</td>
+            <td><input type="text" th:field="*{salary}"/><span class="error" th:errors="*{salary}"/></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" th:field="*{email}"/><span class="error" th:errors="*{email}"/></td>
+        </tr>
+        <tr>
+            <td>Work address:</td>
+            <td><input type="text" th:field="*{workAddress}"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+            <td><input type="reset" value="Reset"/></td>
+        </tr>
+        <tr>
+            <td><a href="/uploadFile">Upload file</a></td>
+        </tr>
+        <tr>
+            <td><a href="/search">Search users</a></td>
+        </tr>
+        <tr>
+            <td><a href="/sendEmail">Send email</a></td>
+        </tr>
+        <tr>
+            <td><a href="/uploadFile">Upload file</a></td>
+        </tr>
 
-<!--            <p>Last name: <input type="text" th:field="*{lastName}" /></p>-->
-<!--            <p>Name: <input type="text" th:field="*{name}" /></p>-->
-<!--            <p>Middle name: <input type="text" th:field="*{middleName}" /></p>-->
-<!--            <p>Age: <input type="text" th:field="*{age}" /><span class="error" th:errors="*{age}"></span></p>-->
-<!--            <p>Salary: <input type="text" th:field="*{salary}" /><span class="error" th:errors="*{salary}"></span></p>-->
-<!--            <p>Email: <input type="text" th:field="*{email}" /><span class="error" th:errors="*{email}"></span></p>-->
-<!--            <p>Work address: <input type="text" th:field="*{workAddress}" /></p>-->
-<!--            <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>-->
-            </table>
-        </form>
+    </table>
+</form>
 
-    </body>
+</body>
 </html>

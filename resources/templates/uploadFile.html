@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Upload</title>
-    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
 </head>
 <body>
 <h1>Upload your file</h1>
@@ -11,10 +11,12 @@
 <form method="POST" action="uploadFile" enctype="multipart/form-data">
     <table>
         <tr>
-            <td>File to upload:</td><td><input type="file" name="file"></td>
+            <td>File to upload:</td>
+            <td><input type="file" name="file"></td>
         </tr>
         <tr>
-            <td>Press here to upload the file!</td><td><input type="submit" value="Upload"></td>
+            <td>Press here to upload the file!</td>
+            <td><input type="submit" value="Upload"></td>
         </tr>
     </table>
 </form>

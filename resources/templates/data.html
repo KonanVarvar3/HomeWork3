@@ -2,20 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Submitted data</title>
-    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 <h1>Your data</h1>
-
-<!--<p th:text="'lastName: ' + ${form.lastName}"></p>-->
-<!--<p th:text="'name: ' + ${form.name}"></p>-->
-<!--<p th:text="'middleName: ' + ${form.middleName}"></p>-->
-<!--<p th:text="'age: ' + ${form.age}"></p>-->
-<!--<p th:text="'salary: ' + ${form.salary}"></p>-->
-<!--<p th:text="'email: ' + ${form.email}"></p>-->
-<!--<p th:text="'workAddress: ' + ${form.workAddress}"></p>-->
-<!--<a href="/form">Return to submit form</a>-->
 
 <table>
     <tr>
@@ -40,7 +31,7 @@
         <td th:text="'workAddress: ' + ${form.workAddress}"/>
     </tr>
     <td>
-        <td><a href="/form">Return to submit form</a></td>
+    <td><a href="/form">Return to submit form</a></td>
     </tr>
 </table>
 
