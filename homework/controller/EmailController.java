@@ -32,6 +32,6 @@ public class EmailController {
 
         this.emailSender.send(simpleMailMessage);
 
-        return "Email have been sent!";
+        return "Email have been sending!";
     }
 }
