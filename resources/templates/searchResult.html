@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search res</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Search result</h1>
+<table>
+    <tr>
+        <td th:text="'lastName: ' + ${form.lastName}"/>
+    </tr>
+    <tr>
+        <td th:text="'name: ' + ${form.name}"/>
+    </tr>
+    <tr>
+        <td th:text="'middleName: ' + ${form.middleName}"/>
+    </tr>
+    <tr>
+        <td th:text="'age: ' + ${form.age}"/>
+    </tr>
+    <tr>
+        <td th:text="'salary: ' + ${form.salary}"/>
+    </tr>
+    <tr>
+        <td th:text="'email: ' + ${form.email}"/>
+    </tr>
+    <tr>
+        <td th:text="'workAddress: ' + ${form.workAddress}"/>
+    </tr>
+    <tr>
+        <td th:text="'Browser: ' + ${form.browser}"/>
+    </tr>
+    <tr>
+        <td th:text="'Date: ' + ${form.date}"/>
+    </tr>
+    <td>
+    <td><a href="/search">Return to search form</a></td>
+    </tr>
+</table>
+
+</body>
+</html>

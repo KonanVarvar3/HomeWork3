@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "@Bean",
+      "type": "java.lang.String",
+      "description": "Description for @Bean."
+  }
+] }
